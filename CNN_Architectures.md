@@ -149,6 +149,7 @@ three planes whereas a grayscale image is the same but it has a single plane.
 - Grayscale images
 
 ![alt text](image-4.png)
+
 The above image shows what a convolution is. We take a filter/kernel (3x3) matrix and apply it to the input image to get the convolved feature. This convolved feature is passed on to the next layer.
 
 - In the case of RGB color channel 
