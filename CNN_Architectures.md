@@ -3,7 +3,7 @@
 Feed forward Neural Networks are artificial Neural Network which nodes do not form loops. This type of neural net works is also known as a multi-layer neural network as all info is only passed forward.
 During data flow, input nodes receive data, which travel through hidden layers, and exit output nodes. No links exist in the network that could get used to by sending info back from the output node.
 
-![alt text](image.png)
+![alt text](architecture_images/image.png)
 
 When the feed forward neural network gets simplified, it can appear as a single layer perceptron.
 
@@ -123,7 +123,7 @@ learning algorithm well suited for analyzing visual data.
     the runner-up's 74%. This success was driven by CNNs,
     a type of neural network that mimics human vision.
 
-![alt text](image-1.png)
+![alt text](architecture_images/image-1.png)
 
 
 - CNN have become fundamental in CV tasks such as image classification, object detection and segmentation
@@ -144,16 +144,16 @@ that are critical for getting a good prediction.
 An RGB image is nothing but a matrix of pixel values having
 three planes whereas a grayscale image is the same but it has a single plane.
 
-![alt text](image-2.png)
+![alt text](architecture_images/image-2.png)
 
 - Grayscale images
 
-![alt text](image-4.png)
+![alt text](architecture_images/image-4.png)
 The above image shows what a convolution is. We take a filter/kernel (3x3) matrix and apply it to the input image to get the convolved feature. This convolved feature is passed on to the next layer.
 
 - In the case of RGB color channel 
 
-![alt text](image-5.png)
+![alt text](architecture_images/image-5.png)
 
 - The number of parameters in a CNN layer depends on the size of the receptive fields( filter kernels) and the number of filters.
 
@@ -218,11 +218,11 @@ image covered by the Kernel.
 
 **Note: Max Pooling performs a lot better than average pooling.**
 
-![alt text](image-6.png)
+![alt text](architecture_images/image-6.png)
 
 #### Architecture of CNN
 
-![alt text](image-7.png)
+![alt text](architecture_images/image-7.png)
 
 #### Components of CNN:
 1. Convolutional Layer:
@@ -257,7 +257,7 @@ This process extracts features from the input data.
 
 **A stride of 1 means the filter moves 1 pixel at a time while stride of 2 means it moves 2 pixels at a time.** 
 
-![alt text](image-8.png)
+![alt text](architecture_images/image-8.png)
 
 - Padding: Adding extra pixels around the border of the i/p
 image to control the spatial dimensions of the o/p.
@@ -421,7 +421,7 @@ filters.
 On next page, here is the final architecture of the Lenet -5 model.
 
 #### LeNet Architecture
-![alt text](image-9.png)
+![alt text](architecture_images/image-9.png)
 
 #### Advantages
 - Simplicity, straight forward
@@ -465,7 +465,7 @@ padding to prevent the size of the feature maps from reducing
 drastically.
 input to the model: 227x227x3
 
-![alt text](image-10.png)
+![alt text](architecture_images/image-10.png)
 
 
 - If we look at the architecture till now, the no. of filters is
@@ -513,7 +513,7 @@ VGG architecture.
 
 VGGNet:
 
-![alt text](image-11.png)
+![alt text](architecture_images/image-11.png)
 
 #### VGG16
 - The convolutional neural network model called the VGG model, or
@@ -528,7 +528,7 @@ filters.
 100 diffrent object categories.
 - The model also accepts images with a resolution of **224x224**
 
-![alt text](image-12.png)
+![alt text](architecture_images/image-12.png)
 
 
 
@@ -541,7 +541,7 @@ that it supports 19 layers.
 - In comparison to VGG16, VGG 19 contains three extra
 convolutional layers.
 
-![alt text](image-13.png)
+![alt text](architecture_images/image-13.png)
 
 ### Google Net
 #### Inception Module
@@ -627,7 +627,7 @@ feature maps at different scales.
 
 #### Architecture of Google Net
 
-![alt text](image-14.png)
+![alt text](architecture_images/image-14.png)
 
 • GoogleNet model is particularly well-known for its use of inception
 modules, which serve as its building blocks by using parallel convolutions with various filter sizes (1x1, 3x3, and 5x5) within a single layer.
@@ -642,7 +642,7 @@ increase in the no. of layer.
 - The 1X1 Convolution
 - Global Average Pooling
 - Auxiliary Classifiers for training
-![alt text](image-15.png)
+![alt text](architecture_images/image-15.png)
 
 - Input featur Map Size: 28x28.
 - Input Channels: 192
@@ -789,7 +789,7 @@ ResNet.
 output of a layer after skipping a few connections.
 
 
-![alt text](image-16.png)
+![alt text](architecture_images/image-16.png)
 
 Here, x is the input to the layer which we are directly
 using to connect to a layer after skipping identity connections
@@ -893,7 +893,7 @@ and o/p layers and the info. vanishes before reaching its destination.
 - No. of connections in DenseNet=(L(L+1))/2
 - In dense net, we have less no. of layers than the other.
 model, so here we can train more than 100 layers of the model ver easily by using this technique.
-![alt text](image-17.png)
+![alt text](architecture_images/image-17.png)
 
 - As we go deeper into the network this becomes a kind
 of unsustainable, if we go 2nd layer to 3rd layer so
@@ -945,7 +945,7 @@ more computationally expensive models.
 making it suitable for real-time applications.
 
 #### Mobile Net V2 Architecture
-![alt text](image-18.png)
+![alt text](architecture_images/image-18.png)
 
 - Depth wise separable Convolution:
 
@@ -1059,4 +1059,4 @@ are a combination of depth-wise separable convolutions
 and inverted residual blocks.
 - uses SE
 
-![alt text](image-19.png)
+![alt text](architecture_images/image-19.png)
