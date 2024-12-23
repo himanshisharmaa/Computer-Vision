@@ -9,6 +9,9 @@ Train the model for instance segmentation, after training we will be getting bes
 - Choosing an appropriate instance(e.g. t3.medium for CPU or g4dn.xlarge for GPU).
 - Configuring storage and security groups (open port for SSh and HTTP)
 - SSH into the instance
+
+        ssh -i "[/path/to/key.pem]" ubuntu@<your-ec2-ip>
+
 2. Installing required packages:
 - update the system:
 
