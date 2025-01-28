@@ -53,7 +53,14 @@ Train the model for instance segmentation, after training we will be getting bes
 
 ## Step4: Configure Nginx
 
+
+
 1. Edit Nginx Configuration:
+
+        sudo apt update
+        sudo apt install nginx
+
+        sudo nano /etc/nginx/sites-available/flask-app
 
 - Update /etc/nginx/sites-available/default:
 
